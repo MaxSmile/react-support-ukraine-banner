@@ -5,8 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
-require("./SupportUkraineBanner.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+//import './SupportUkraineBanner.css';
+
 var SupportUkraineBanner = function SupportUkraineBanner() {
   return /*#__PURE__*/_react["default"].createElement("a", {
     className: "support-ukraine",
