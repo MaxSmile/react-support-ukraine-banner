@@ -1,5 +1,5 @@
 import React from 'react';
-import './SupportUkraineBanner.css';
+//import './SupportUkraineBanner.css';
 
 const SupportUkraineBanner = () => (
     <a
