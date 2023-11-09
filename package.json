@@ -1,0 +1,33 @@
+{
+  "name": "react-support-ukraine-banner",
+  "version": "1.0.0",
+  "description": "React component to show support for Ukraine with u24.gov.ua link on the top of the page.",
+  "main": "dist/SupportUkraineBanner.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MaxSmile/react-support-ukraine-banner.git"
+  },
+  "keywords": ["u24.gov.ua", "Ukraine", "donation", "banner", "support", "United24"],
+  "author": "maxim@vasilkoff.com",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
