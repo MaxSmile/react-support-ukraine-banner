@@ -1,6 +1,6 @@
 {
   "name": "react-support-ukraine-banner",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React component to show support for Ukraine with u24.gov.ua link on the top of the page.",
   "main": "dist/SupportUkraineBanner.ts",
   "scripts": {
