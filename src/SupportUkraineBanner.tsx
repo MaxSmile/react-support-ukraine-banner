@@ -15,7 +15,7 @@ const SupportUkraineBanner: React.FC = () => {
                 background: '#000',
                 display: 'flex',
                 justifyContent: 'center',
-                padding: '0px 5px',
+                padding: '5px',
                 zIndex: 10000,
                 textDecoration: 'none',
                 fontFamily: 'arial'
