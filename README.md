@@ -1,16 +1,18 @@
 # React Support Ukraine Banner
 
-This React component displays a banner at the top of your webpage with a link to [u24.gov.ua](https://u24.gov.ua), the official fundraising platform of Ukraine, also known as UNITED24.
+This React component displays a banner at the top of your webpage with a link to [u24.gov.ua](https://u24.gov.ua), the official fundraising platform of Ukraine, also known as **UNITED24**.
 
 By including this banner, you're not just adding a component to your website, you're taking a stand with Ukraine. You're helping to protect, save, and rebuild lives.
+
+Demo:
 
 [![Support Ukraine Banner Demo on Vasilkoff.com](Screenshot.webp)](https://vasilkoff.com)
 
 ## About UNITED24
 
-UNITED24 was launched in response to the full-scale invasion of Ukraine as a direct way to facilitate aid. President Zelenskyy's administration created this initiative to answer the global question: "What can we do to help Ukraine?"
+UNITED24 was launched in response to the full-scale invasion of Ukraine as a direct way to facilitate aid. President Zelenskyy's administration created this initiative to answer the global question: **"What can we do to help Ukraine?"**
 
-The mission of UNITED24 is to:
+### The mission of UNITED24 is to:
 
 - Unite people from all over the world in support of Ukraine.
 - Ensure the protection and reconstruction of Ukraine.

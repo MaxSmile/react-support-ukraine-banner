@@ -1,2 +1,8 @@
 # dependencies
 /node_modules
+*.log
+dist
+.cache
+.idea
+.DS_Store
+.vscode/
