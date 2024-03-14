@@ -28,24 +28,20 @@ yarn add react-support-ukraine-banner
 
 ## Usage
 
-Because this component is based on [React](https://reactjs.org/), you can use it in any React project. But to make it compatible with Next.js CSS needs to be imported separately.
-
 ```jsx
 import React from 'react';
 import SupportUkraineBanner from 'react-support-ukraine-banner';
-import 'react-support-ukraine-banner/dist/SupportUkraineBanner.css';
 
 const App = () => (
   <div>
-    {/* ... other components */}
     <SupportUkraineBanner />
-    {/* ... or other components */}
+    {/* Your application content goes here */}
   </div>
 );
 
 export default App;
 ```
-
+Note: Since version 1.1.0, the component is now written in TypeScript and no longer requires importing CSS files separately.
 
 ## Customization
 

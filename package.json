@@ -1,10 +1,10 @@
 {
   "name": "react-support-ukraine-banner",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "React component to show support for Ukraine with u24.gov.ua link on the top of the page.",
-  "main": "dist/SupportUkraineBanner.js",
+  "main": "dist/SupportUkraineBanner.ts",
   "scripts": {
-    "build": "babel src --out-dir dist --copy-files",
+    "build": "babel src --extensions '.ts,.tsx' --out-dir dist --copy-files",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -32,7 +32,10 @@
     "@babel/cli": "^7.23.0",
     "@babel/core": "^7.23.3",
     "@babel/preset-env": "^7.23.3",
-    "@babel/preset-react": "^7.23.3"
+    "@babel/preset-react": "^7.23.3",
+    "@types/react": "^18.2.65",
+    "@types/react-dom": "^18.2.22",
+    "typescript": "^5.4.2"
   },
   "engines": {
     "node": ">=10.0.0"
