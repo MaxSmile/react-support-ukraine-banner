@@ -7,6 +7,9 @@ Semantic Versioning.
 
 Note: release notes are tracked starting with 1.1.8; earlier history is not recorded.
 
+## [1.1.9] - 2025-01-01
+### Changed
+- Add optional className props for root, flag, and text elements.
 
 ## [1.1.8] - 2025-01-01
 ### Changed

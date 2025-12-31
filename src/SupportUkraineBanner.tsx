@@ -1,12 +1,23 @@
 import React from 'react';
 
-const SupportUkraineBanner: React.FC = () => {
+type SupportUkraineBannerProps = {
+    className?: string;
+    flagClassName?: string;
+    textClassName?: string;
+};
+
+const SupportUkraineBanner: React.FC<SupportUkraineBannerProps> = ({
+    className,
+    flagClassName,
+    textClassName
+}) => {
     return (
         <a 
             href="https://u24.gov.ua"
             target="_blank"
             rel="noopener noreferrer"
             title="Donate to support freedom."
+            className={className}
             style={{
                 position: 'absolute',
                 left: 0,
@@ -21,11 +32,16 @@ const SupportUkraineBanner: React.FC = () => {
                 fontFamily: 'arial'
             }}
         >
-            <div role="img" aria-label="Flag of Ukraine" style={{ height: '25px', marginRight: '10px' }}>
+            <div
+                role="img"
+                aria-label="Flag of Ukraine"
+                className={flagClassName}
+                style={{ height: '25px', marginRight: '10px' }}
+            >
                 <div style={{ width: '40px', height: '12.5px', background: '#005BBB' }}></div>
                 <div style={{ width: '40px', height: '12.5px', background: '#FFD500' }}></div>
             </div>
-            <div style={{ color: 'white', fontSize: '12px', lineHeight: '25px' }}>
+            <div className={textClassName} style={{ color: 'white', fontSize: '12px', lineHeight: '25px' }}>
                 Donate to support freedom.
             </div>
         </a>
