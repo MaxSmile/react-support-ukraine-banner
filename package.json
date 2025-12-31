@@ -1,12 +1,12 @@
 {
   "name": "react-support-ukraine-banner",
-  "version": "1.1.5",
+  "version": "1.1.8",
   "description": "React component to show support for Ukraine with u24.gov.ua link on the top of the page.",
   "main": "dist/SupportUkraineBanner.js",
   "types": "dist/SupportUkraineBanner.d.ts",
   "homepage": "https://github.com/MaxSmile/react-support-ukraine-banner#readme",
   "scripts": {
-    "build": "tsc && babel src --extensions '.ts,.tsx' --out-dir dist --copy-files",
+    "build": "tsc",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -28,16 +28,12 @@
     "README.md"
   ],
   "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0"
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.23.0",
-    "@babel/core": "^7.23.3",
-    "@babel/preset-env": "^7.23.3",
-    "@babel/preset-react": "^7.23.3",
-    "@types/react": "^18.2.65",
-    "@types/react-dom": "^18.2.22",
-    "typescript": "^5.4.2"
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=10.0.0"
