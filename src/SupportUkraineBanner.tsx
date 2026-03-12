@@ -4,16 +4,27 @@ type SupportUkraineBannerProps = {
     className?: string;
     flagClassName?: string;
     textClassName?: string;
+    reserveSpace?: boolean;
+    slotMinHeight?: number | string;
+    position?: 'absolute' | 'fixed' | 'sticky';
+    zIndex?: number;
 };
+
+const toCssLength = (value: number | string): string =>
+    typeof value === 'number' ? `${value}px` : value;
 
 const SupportUkraineBanner: React.FC<SupportUkraineBannerProps> = ({
     className,
     flagClassName,
-    textClassName
+    textClassName,
+    reserveSpace = false,
+    slotMinHeight = 40,
+    position = 'absolute',
+    zIndex = 10000
 }) => {
     const [isHover, setIsHover] = useState(false);
 
-    return (
+    const banner = (
         <div
             className={className}
             onMouseEnter={() => setIsHover(true)}
@@ -21,7 +32,7 @@ const SupportUkraineBanner: React.FC<SupportUkraineBannerProps> = ({
             onFocusCapture={() => setIsHover(true)}
             onBlurCapture={() => setIsHover(false)}
             style={{
-                position: 'absolute',
+                position,
                 left: 0,
                 top: 0,
                 right: 0,
@@ -29,7 +40,7 @@ const SupportUkraineBanner: React.FC<SupportUkraineBannerProps> = ({
                 display: 'flex',
                 justifyContent: 'center',
                 padding: '5px',
-                zIndex: 10000,
+                zIndex,
                 fontFamily: 'arial'
             }}
         >
@@ -81,6 +92,16 @@ const SupportUkraineBanner: React.FC<SupportUkraineBannerProps> = ({
             >
                 Get the same
             </a>
+        </div>
+    );
+
+    if (!reserveSpace) {
+        return banner;
+    }
+
+    return (
+        <div style={{ position: 'relative', minHeight: toCssLength(slotMinHeight) }}>
+            {banner}
         </div>
     );
 };

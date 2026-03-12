@@ -45,6 +45,39 @@ export default App;
 ```
 Note: Since version 1.1.0, the component is now written in TypeScript and no longer requires importing CSS files separately.
 
+## Layout And Header Overlap
+
+By default, the banner uses `position: absolute` to stay lightweight and easy to layer.  
+If your site has a sticky/fixed header, reserve vertical space for the banner:
+
+```jsx
+<SupportUkraineBanner reserveSpace />
+```
+
+You can customize the reserved height:
+
+```jsx
+<SupportUkraineBanner reserveSpace slotMinHeight={40} />
+```
+
+Equivalent manual approach (for older versions):
+
+```jsx
+<div style={{ position: 'relative', minHeight: 40 }}>
+  <SupportUkraineBanner />
+</div>
+```
+
+### Props
+
+- `className?: string`
+- `flagClassName?: string`
+- `textClassName?: string`
+- `reserveSpace?: boolean` (default: `false`)
+- `slotMinHeight?: number | string` (default: `40`)
+- `position?: 'absolute' | 'fixed' | 'sticky'` (default: `'absolute'`)
+- `zIndex?: number` (default: `10000`)
+
 ## Customization
 
 The component uses minimal styling to make it easy to customize. You can override the default styles by providing additional classes or style the existing classes in your CSS.
